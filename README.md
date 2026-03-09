@@ -31,5 +31,8 @@ Eta diye function choto kore likha jay.
 
 
 
+5️⃣ What are template literals?
 
+Template literals holo JavaScript e string likhar modern way jekhane variable ba expression easily string er moddhe use kora jay.
+Eta backtick (``) diye likha hoy.
  
