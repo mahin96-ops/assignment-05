@@ -137,18 +137,22 @@ function ActiveButton(id){
 
 };
 
-document.getElementById('btn-search').addEventListener("click",()=>{
-    const input =document.getElementById('input-src');
-    const searchValue = input.value.trim().toLowerCase;
-    // console.log(searchValue)
 
-    fetch('https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=%7B')
-    .then((res) => res.json())
-    .then((data) => {
-        const allWords = data.data;
-        
-        const filterWords = allWords.filter(word=> word.word.toLowerCase().includes(searchValue));
-        console.log(filterWords)
-    })
+document.getElementById('btn-search').addEventListener("click", () => {
+
+    const input = document.getElementById('input-src');
+    const searchText = input.value.trim().toLowerCase();
+
+    if(searchText === ""){
+        displayIssues(sobIssues);
+        return;
+    }
+
+    const matchedIssues = sobIssues.filter(issue =>
+        issue.title.toLowerCase().includes(searchText) ||
+        issue.description.toLowerCase().includes(searchText)
+    );
+
+    displayIssues(matchedIssues);
+
 });
-
