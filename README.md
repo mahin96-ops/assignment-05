@@ -1,4 +1,5 @@
 1️⃣ What is the difference between var, let, and const?
+
 ans:var, let, const er simple difference:
 
  1.var → old way variable declare korar jonno, same variable abar declare kora jay.
@@ -7,5 +8,21 @@ ans:var, let, const er simple difference:
 
  3.const → value ekbar set korle pore ar change kora jay na. 
 
+ 
+
  2️⃣ What is the spread operator (...)?
  ans: Spread operator (...) holo ekta operator ja array ba object er value gula ke alada alada kore spread / copy kore.
+ 
+
+
+ 3️⃣ What is the difference between map(), filter(), and forEach()?
+
+ ans:map(), filter(), forEach() er simple difference:
+1. map = new array banay
+2. filter = condition diye new array banay
+3. forEach = sudhu loop chalay, return kore na.
+
+
+
+
+ 
