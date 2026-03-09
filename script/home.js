@@ -135,5 +135,11 @@ function ActiveButton(id){
     document.getElementById(id).classList.add("btn-primary");
     document.getElementById(id).classList.remove('btn-soft')
 
-}
+};
+
+document.getElementById('btn-search').addEventListener("click",()=>{
+    const input =document.getElementById('input-src');
+    const searchValue = input.value.trim().toLowerCase;
+    console.log(searchValue)
+})
 
