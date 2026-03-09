@@ -24,5 +24,12 @@ ans:var, let, const er simple difference:
 
 
 
+4️⃣ What is an arrow function?
+
+ans. Arrow function holo JavaScript e short / modern way e function lekhar system.
+Eta diye function choto kore likha jay.
+
+
+
 
  
